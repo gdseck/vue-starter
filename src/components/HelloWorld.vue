@@ -1,15 +1,13 @@
 <template>
-  <div>
-  </div>
+  <q-page class="flex flex-center">
+    <img alt="Quasar logo" src="../assets/logo.png" />
+  </q-page>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
+<style></style>
 
-export default Vue.extend({
-  name: "HelloWorld",
-  props: {
-    msg: String
-  }
-});
+<script>
+export default {
+  name: 'HelloWorld',
+};
 </script>

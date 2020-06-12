@@ -7,7 +7,7 @@ const getConfig = ctx => {
   const config = {
     plugins: [
       require('postcss-import')(),
-      require('tailwindcss')('./tailwind.config.js'),
+      require('tailwindcss')(),
       require('postcss-custom-properties')({
         preserve: false,
       }),

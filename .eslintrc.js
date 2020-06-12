@@ -3,22 +3,22 @@ const isProduction = process.env.NODE_ENV === 'production';
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
   extends: [
-    "plugin:vue/essential",
-    "eslint:recommended",
-    "@vue/typescript/recommended",
-    "@vue/prettier",
-    "@vue/prettier/@typescript-eslint",
-    "plugin:lodash-fp/recommended"
+    'plugin:vue/essential',
+    'eslint:recommended',
+    '@vue/typescript/recommended',
+    '@vue/prettier',
+    '@vue/prettier/@typescript-eslint',
+    'plugin:lodash-fp/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/camelcase': isProduction ? 'off' : 'warn',
     '@typescript-eslint/no-inferrable-types': 'off',
@@ -33,5 +33,5 @@ module.exports = {
     'lodash-fp/consistent-name': 'off',
     'lodash-fp/no-extraneous-args': 'off',
     'lodash-fp/prefer-constant': 'off',
-  }
+  },
 };
